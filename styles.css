@@ -1,0 +1,173 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Dark gray text */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+header {
+    background-color: #333; /* Dark header background */
+    color: #fff; /* White text */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Add some padding to the links */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #555; /* Slightly darker background on hover */
+}
+
+#hero {
+    background-image: url('hero-image.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Increased padding for a more prominent hero section */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color:grey;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#about, #projects, #contact {
+    padding: 60px 20px; /* Consistent padding for sections */
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#about h2, #projects h2, #contact h2 {
+    text-align: center; /* Center the section titles */
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content img {
+    width: 200px; /* Fixed width for the image */
+    height: 200px; /* Fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
